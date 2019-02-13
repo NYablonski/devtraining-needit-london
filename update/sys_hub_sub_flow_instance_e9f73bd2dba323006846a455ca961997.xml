@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_sub_flow_instance">
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Find and Close Long Overdue NeedIt Tasks">eae5bb52dba323006846a455ca961939</flow>
+        <inputs/>
+        <inputs/>
+        <order>4.1</order>
+        <parent_ui_id>7c8e9d0b-a12b-4413-ab6c-06eb9b9b2b8e</parent_ui_id>
+        <subflow display_value="Handle Overdue NeedIt Tasks">2f243752dba323006846a455ca961950</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 12:05:35</sys_created_on>
+        <sys_id>e9f73bd2dba323006846a455ca961997</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_sub_flow_instance_e9f73bd2dba323006846a455ca961997</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 12:05:36</sys_updated_on>
+        <ui_id>d6bbcd73-0a5d-43cd-b646-20dd3cb029dc</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e9f73bd2dba323006846a455ca961997"/>
+    <sys_element_mapping action="delete_multiple" query="id=e9f73bd2dba323006846a455ca961997"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>needit_task</field>
+        <id>e9f73bd2dba323006846a455ca961997</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 12:05:36</sys_created_on>
+        <sys_id>65f73bd2dba323006846a455ca96199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 12:05:36</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_2f243752dba323006846a455ca961950</table>
+        <value>{{7c8e9d0b-a12b-4413-ab6c-06eb9b9b2b8e.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>reason</field>
+        <id>e9f73bd2dba323006846a455ca961997</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 12:05:36</sys_created_on>
+        <sys_id>a1f73bd2dba323006846a455ca96199d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 12:05:36</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_2f243752dba323006846a455ca961950</table>
+        <value>NeedIt Task {{7c8e9d0b-a12b-4413-ab6c-06eb9b9b2b8e.item.number}} was automatically closed because its Due date of  {{7c8e9d0b-a12b-4413-ab6c-06eb9b9b2b8e.item.due_date}} was older than the autoCloseOverdue of {{33627cb0-c2a4-41d0-85b0-867c9dd6ad5b.property_value}} days.</value>
+    </sys_element_mapping>
+</record_update>
